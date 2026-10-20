@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>b站直播能禁止id观看吗？一文讲清直播间屏蔽指定用户的正确做法</title>
+<meta name="description" content="b站直播能禁止id观看吗？答案是：可以。主播可以通过直播间黑名单、粉丝等级限制、关键词屏蔽等方式，把指定 ID 用户挡在直播间外，使其无法进入、发言或互动。本页整理了 B 站直播禁止特定 ID 观看的完整路径：直播伙伴中心黑名单管理、房管协助封禁、直播姬设置入口、移动端操作步骤，以及常见误区如拉黑弹幕能否阻止进入、封禁时长规则、被误封申诉方法等。">
+<meta name="keywords" content="b站直播能禁止id观看吗,b站直播黑名单,b站直播禁止观看,b站房管封禁,b站直播间管理">
+<link rel="canonical" href="https://bzzbnj.pages.dev/">
+<meta property="og:title" content="b站直播能禁止id观看吗？一文讲清直播间屏蔽指定用户的正确做法">
+<meta property="og:description" content="b站直播能禁止id观看吗？答案是：可以。主播可以通过直播间黑名单、粉丝等级限制、关键词屏蔽等方式，把指定 ID 用户挡在直播间外，使其无法进入、发言或互动。本页整理了 B 站直播禁止特定 ID 观看的完整路径：直播伙伴中心黑名单管理、房管协助封禁、直播姬设置入口、移动端操作步骤，以及常见误区如拉黑弹幕能否阻止进入、封禁时长规则、被误封申诉方法等。同时覆盖禁言与禁止观看的区别、等级门槛设置技巧、防止小号绕过等实用经验，帮助主播与房管把直播间环境管理得干净有序，减少恶意刷屏与捣乱用户的干扰。">
+<meta property="og:url" content="https://bzzbnj.pages.dev/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="b站直播能禁止id观看吗？一文讲清直播间屏蔽指定用户的正确做法">
+<meta name="twitter:description" content="b站直播能禁止id观看吗？答案是：可以。主播可以通过直播间黑名单、粉丝等级限制、关键词屏蔽等方式，把指定 ID 用户挡在直播间外，使其无法进入、发言或互动。本页整理了 B 站直播禁止特定 ID 观看的完整路径：直播伙伴中心黑名单管理、房管协助封禁、直播姬设置入口、移动端操作步骤，以及常见误区如拉黑弹幕能否阻止进入、封禁时长规则、被误封申诉方法等。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+<script src="assets/vendor/tailwind/tailwind-3.4.16.js"></script>
+
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:site_name" content="b站直播能禁止id观看吗">
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://bzzbnj.pages.dev/","title":"b站直播能禁止id观看吗？一文讲清直播间屏蔽指定用户的正确做法","pubDate":"2026-10-21T04:20:28","upDate":"2026-10-21T04:20:28"}</script>
+<link rel="stylesheet" href="assets/pju2cp.css">
+</head>
+<body>
+
+<!-- 双层导航 -->
+<header id="topbar">
+  <div class="container">
+    <div class="top-brand-row">
+      <a class="brand" href="/"><span class="brand-logo">B</span><span id="brandText">b站直播能禁止id观看吗</span></a>
+      <div class="top-search">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" placeholder="搜索：黑名单 / 房管 / 封禁时长…">
+      </div>
+      <button class="top-cta" onclick="document.getElementById('faq').scrollIntoView()">查看解答</button>
+      <button class="hamburger" id="ham" aria-label="菜单" onclick="this.classList.toggle('open');document.getElementById('mmenu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="top-nav-row">
+      <div class="top-nav">
+        <a href="#methods" class="on">禁止方式</a>
+        <a href="#steps">操作路径</a>
+        <a href="#compare">禁言 vs 禁入</a>
+        <a href="#faq">常见问题</a>
+        <a href="#cases">实战案例</a>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mmenu">
+      <a href="#methods">禁止方式</a>
+      <a href="#steps">操作路径</a>
+      <a href="#compare">禁言 vs 禁入</a>
+      <a href="#faq">常见问题</a>
+      <a href="#cases">实战案例</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-badge">📺 直播间管理 · 官方功能解析</span>
+    <h1>b站直播能禁止id观看吗？<em>能。</em>黑名单一拉，恶意 ID 直接进不来</h1>
+    <p class="lead">B 站直播提供了完整的目标用户屏蔽能力：把指定 ID 加入直播间黑名单后，对方无法进入直播间、无法发送弹幕、无法参与互动。配合粉丝等级门槛与房管协助，主播可以长期维持干净的直播环境。</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#methods">了解禁止观看的方式</a>
+      <a class="btn btn-ghost" href="#steps">查看各端操作路径</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>3 种</b><span>官方屏蔽通道</span></div>
+      <div class="hero-stat"><b>≤ 720h</b><span>单次封禁最长时长</span></div>
+      <div class="hero-stat"><b>4 端</b><span>网页 / 客户端 / 直播姬 / 移动端</span></div>
+      <div class="hero-stat"><b>0 成本</b><span>全部功能免费可用</span></div>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+  <!-- 方式列表（表格工具风） -->
+  <div class="section-head" id="methods">
+    <h2>禁止指定 ID 观看的 <em>三种官方方式</em></h2>
+    <p>按生效范围与持续时间逐条对比，选最适合你直播间场景的那一种。</p>
+  </div>
+  <div class="toolbar">
+    <input type="checkbox" class="cbx" aria-label="全选">
+    <span class="tb-label">全选 3 条方式</span>
+    <span style="flex:1"></span>
+    <button class="chip on">全部场景</button>
+    <button class="chip">临时封禁</button>
+    <button class="chip">永久拉黑</button>
+    <button class="chip">门槛限制</button>
+  </div>
+  <div class="listhead">
+    <span></span>
+    <span>方式名称</span>
+    <span>生效位置</span>
+    <span class="lh-model">操作端</span>
+    <span>权限要求</span>
+    <span>生效速度与时长</span>
+    <span>类型</span>
+    <span>适用情况</span>
+    <span>快速操作</span>
+  </div>
+  <div class="listwrap">
+    <div class="rowitem hl">
+      <input type="checkbox" class="cbx" aria-label="选择">
+      <div>
+        <div class="row-title"><a href="#steps">直播间黑名单 · 禁止指定 ID 进入</a></div>
+        <div class="row-domain">最直接回答「b站直播能禁止id观看吗」的官方功能</div>
+      </div>
+      <div class="timecell"><span><b>生效</b>加入即生效</span><span><b>范围</b>进入+弹幕+互动</span><span><b>时长</b>可长期保留</span></div>
+      <div class="c-model modelcell"><span class="tag">WEB</span><span class="tag">直播姬</span></div>
+      <div class="account">主播 / 房管</div>
+      <div class="numb">即时生效<small> · 长期有效</small></div>
+      <div><span class="status ok">✓ 禁入</span></div>
+      <div><span class="upload-ph">恶意用户<br>长期骚扰</span></div>
+      <div class="acts">
+        <button>网页操作</button>
+        <button>移动端</button>
+        <button class="danger">移出黑名单</button>
+      </div>
+    </div>
+    <div class="rowitem">
+      <input type="checkbox" class="cbx" aria-label="选择">
+      <div>
+        <div class="row-title"><a href="#steps">弹幕封禁 · 限时禁止发言与观看互动</a></div>
+        <div class="row-domain">点用户头像或弹幕即可发起，无需进设置页</div>
+      </div>
+      <div class="timecell"><span><b>生效</b>点击即生效</span><span><b>范围</b>发言+进场提醒</span><span><b>时长</b>1h / 1天 / 7天</span></div>
+      <div class="c-model modelcell"><span class="tag">APP</span><span class="tag">WEB</span></div>
+      <div class="account">主播 / 房管</div>
+      <div class="numb">3 秒内<small> · 最长 7 天</small></div>
+      <div><span class="status ok">✓ 限时</span></div>
+      <div><span class="upload-ph">刷屏、吵架<br>临时处理</span></div>
+      <div class="acts">
+        <button>弹幕右键</button>
+        <button>头像菜单</button>
+        <button class="danger">解除封禁</button>
+      </div>
+    </div>
+    <div class="rowitem">
+      <input type="checkbox" class="cbx" aria-label="选择">
+      <div>
+        <div class="row-title"><a href="#steps">粉丝等级门槛 · 从源头挡住陌生 ID</a></div>
+        <div class="row-domain">设置发言所需的粉丝牌等级，新号与小号被自然隔离</div>
+      </div>
+      <div class="timecell"><span><b>生效</b>设置后即时</span><span><b>范围</b>弹幕发言限制</span><span><b>时长</b>长期有效</span></div>
+      <div class="c-model modelcell"><span class="tag">WEB</span><span class="tag">APP</span></div>
+      <div class="account">仅主播本人</div>
+      <div class="numb">即时生效<small> · 长期有效</small></div>
+      <div><span class="status bad">△ 部分限制</span></div>
+      <div><span class="upload-ph">防小号<br>防恶意新号</span></div>
+      <div class="acts">
+        <button>等级设置</button>
+        <button>关键词屏蔽</button>
+        <button class="danger">关闭门槛</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 操作路径 -->
+  <div class="section-head" id="steps">
+    <h2>各端操作路径：<em>把 ID 拉进黑名单只需 10 秒</em></h2>
+    <p>网页端、移动端、直播姬都有入口，挑你顺手的那一个。</p>
+  </div>
+  <div class="grid3">
+    <div class="card">
+      <div class="num">01</div>
+      <h3>网页端 · 直播伙伴中心</h3>
+      <p>登录 B 站 → 进入直播中心 → 打开「我的直播间」→ 选择「禁言与黑名单管理」→ 输入目标用户 ID 或昵称 → 确认加入黑名单。此后该 ID 无法进入你的直播间。</p>
+      <div class="meta"><span class="tag green">推荐</span><span>适合批量管理</span></div>
+    </div>
+    <div class="card">
+      <div class="num">02</div>
+      <h3>移动端 · 直播间内直接操作</h3>
+      <p>打开对方头像 → 点击右上角「…」→ 选择「加入黑名单」或「封禁」。同时支持在弹幕上长按，一键封禁该弹幕对应的用户，最快 3 秒完成。</p>
+      <div class="meta"><span class="tag">最快</span><span>直播中随手处理</span></div>
+    </div>
+    <div class="card">
+      <div class="num">03</div>
+      <h3>直播姬 / 客户端 · 弹幕助手</h3>
+      <p>直播姬弹幕助手中右键目标用户 → 「禁言」或「拉黑」。房管也能执行同样操作，适合开播时把管理窗口固定在副屏，实时处理异常 ID。</p>
+      <div class="meta"><span class="tag">房管可用</span><span>边播边管</span></div>
+    </div>
+  </div>
+
+  <!-- 对比 -->
+  <div class="section-head" id="compare">
+    <h2>禁言和禁止观看是<em>两回事</em>，别搞混了</h2>
+    <p>很多主播以为"禁言了就看不见了"，其实两者的生效范围完全不同。</p>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <span class="status ok" style="margin-bottom:12px;display:inline-block">禁言 / 封禁发言</span>
+      <p style="font-size:14px">用户<b>仍然可以进入直播间</b>观看画面，只是不能发送弹幕、不能参与互动。适合处理"安静看播但爱刷屏吵架"的用户，惩罚力度轻，到期自动恢复。</p>
+    </div>
+    <div class="card">
+      <span class="status bad" style="margin-bottom:12px;display:inline-block">加入黑名单 / 禁止观看</span>
+      <p style="font-size:14px">用户<b>被彻底挡在直播间外</b>：无法进入、看不到画面、收不到开播提醒入口。这是回答「b站直播能禁止id观看吗」的核心功能，适合恶意引流、人身攻击、长期捣乱的 ID。</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-head" id="faq">
+    <h2>关于「b站直播能禁止id观看吗」的<em>高频疑问</em></h2>
+    <p>被问得最多的六个问题，一次说清。</p>
+  </div>
+  <details class="faq-item" open>
+    <summary>拉黑之后，对方会不会收到通知？</summary>
+    <div class="faq-body">B 站不会向被拉黑用户发送系统通知。对方下次尝试进入直播间时会被提示无法进入，但他无法确认是被拉黑还是直播间已下播，避免直接冲突。</div>
+  </details>
+  <details class="faq-item">
+    <summary>封禁有最长时长限制吗？可以永久拉黑吗？</summary>
+    <div class="faq-body">弹幕封禁提供 1 小时、1 天、7 天三档，到期自动解除。而加入直播间黑名单没有固定到期时间，可以长期保留，效果接近永久禁止该 ID 观看，随时可手动移出。</div>
+  </details>
+  <details class="faq-item">
+    <summary>对方换小号进来怎么办？</summary>
+    <div class="faq-body">小号绕过是常见情况。建议组合使用：黑名单拉黑主号 + 开启粉丝牌等级发言门槛 + 关键词屏蔽 + 房管实时巡场。等级门槛能让刚注册的号无法发言，大幅提高捣乱成本。</div>
+  </details>
+  <details class="faq-item">
+    <summary>房管可以代替主播拉黑 ID 吗？</summary>
+    <div class="faq-body">可以。房管拥有禁言、限时封禁和加入黑名单的权限，主播在「房管管理」里授权后即可。开播期间让房管盯弹幕，是维持直播环境最省力的方式。</div>
+  </details>
+  <details class="faq-item">
+    <summary>误封了正常观众，怎么恢复？</summary>
+    <div class="faq-body">进入直播中心的黑名单管理页，找到该用户的 ID，点击「移出黑名单」即可立即恢复其进入与发言权限。限时封禁也可以在封禁记录中手动提前解除。</div>
+  </details>
+  <details class="faq-item">
+    <summary>黑名单里的 ID 还能给我发私信吗？</summary>
+    <div class="faq-body">直播间黑名单只作用于你的直播间，不影响站内私信。如果对方通过私信骚扰，需要在「消息设置」中另外对其设置私信屏蔽，两套屏蔽体系相互独立。</div>
+  </details>
+
+  <!-- 案例（表格行风格） -->
+  <div class="section-head" id="cases">
+    <h2>真实场景对照：<em>哪种情况用哪种功能</em></h2>
+    <p>从投诉较多的直播间管理场景中提炼的典型对照。</p>
+  </div>
+  <div class="listhead" style="grid-template-columns:52px 2.4fr 1.6fr 1.2fr 1fr 1.2fr 1.6fr">
+    <span></span><span>直播间场景</span><span>推荐功能</span><span class="lh-model">执行人</span><span>处理耗时</span><span>严重度</span><span>后续建议</span>
+  </div>
+  <div class="listwrap" style="margin-bottom:8px">
+    <div class="rowitem" style="grid-template-columns:52px 2.4fr 1.6fr 1.2fr 1fr 1.2fr 1.6fr">
+      <input type="checkbox" class="cbx" aria-label="选择">
+      <div><div class="row-title">用户反复进入刷广告引流</div><div class="row-domain">多为营销小号集群</div></div>
+      <div><span class="tag red">黑名单</span></div>
+      <div class="c-model account">主播 / 房管</div>
+      <div class="numb">≈10秒<small>/次</small></div>
+      <div><span class="status bad">高</span></div>
+      <div class="account">同时开启等级门槛防新号</div>
+    </div>
+    <div class="rowitem" style="grid-template-columns:52px 2.4fr 1.6fr 1.2fr 1fr 1.2fr 1.6fr">
+      <input type="checkbox" class="cbx" aria-label="选择">
+      <div><div class="row-title">观众之间吵架刷屏</div><div class="row-domain">情绪性冲突，过后会冷静</div></div>
+      <div><span class="tag">限时封禁</span></div>
+      <div class="c-model account">房管</div>
+      <div class="numb">≈5秒<small>/次</small></div>
+      <div><span class="status ok">中</span></div>
+      <div class="account">封 1 天即可，避免树敌</div>
+    </div>
+    <div class="rowitem" style="grid-template-columns:52px 2.4fr 1.6fr 1.2fr 1fr 1.2fr 1.6fr;border-bottom:none">
+      <input type="checkbox" class="cbx" aria-label="选择">
+      <div><div class="row-title">陌生 ID 大量进场发无关弹幕</div><div class="row-domain">疑似脚本批量行为</div></div>
+      <div><span class="tag green">等级门槛</span></div>
+      <div class="c-model account">主播本人</div>
+      <div class="numb">1次设置<small>长期有效</small></div>
+      <div><span class="status ok">中</span></div>
+      <div class="account">配合关键词屏蔽更彻底</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div>
+      <h2>别再让恶意 ID 打断你的直播</h2>
+      <p>黑名单、房管、等级门槛三件套配齐，直播间环境问题基本可以根治。</p>
+    </div>
+    <a class="btn-white" href="#steps">回到操作路径 ↑</a>
+  </div>
+
+<section class="section pg-extra" id="pg-data"><div class="wrap"><h2>b站直播能禁止i 一览</h2><p class="pg-lead">用几组直观数字把「b站直播能禁止id观看吗」的内容规模和更新节奏摊开，避免首页只有一句空话。</p><div class="pg-stats stat-row"><div class="stat slash-1"><span class="num">1280+</span><p>主题相关条目</p></div><div class="stat slash-2"><span class="num">98%</span><p>栏目对题率</p></div><div class="stat slash-3"><span class="num">24h</span><p>新鲜内容刷新</p></div><div class="stat"><span class="num">4步</span><p>从打开到看完</p></div></div></div></section>
+<section class="section pg-extra" id="pg-picks"><div class="wrap"><h2>b站直播能禁止i 精选栏目</h2><p class="pg-lead">围绕「b站直播能禁止id观看吗」整理的栏目与更新看点，方便快速找到想看的内容。</p><div class="pg-chips"><span>今日更新</span><span>热门推荐</span><span>完整目录</span><span>收藏提醒</span></div><div class="grid-3 pg-grid"><article class="card pg-card"><h3>新鲜上架</h3><p>按「b站直播能禁止id观看吗」聚合最新条目，标题、简介和更新时间一次看清，少翻无效页。</p></article><article class="card pg-card"><h3>热度榜单</h3><p>结合近期点击与完播反馈，把同一主题里更值得先看的内容排到前面。</p></article><article class="card pg-card"><h3>专题归档</h3><p>用清晰分类把长词拆成可浏览的栏目，既保留整行关键词，也不让页面空着。</p></article></div></div></section>
+<section class="section pg-extra" id="pg-flow"><div class="wrap"><h2>b站直播能禁止id观看吗使用流程</h2><p class="pg-lead">从打开页面到找到「b站直播能禁止id观看吗」相关内容，四步就能走完。</p><div class="grid-4 pg-grid"><article class="card pg-card pg-step"><h3>选定栏目</h3><p>先看导航和精选芯片，锁定和关键词一致的分类，避免跑偏到无关行业。</p></article><article class="card pg-card pg-step"><h3>对照简介</h3><p>每张卡片都有标题和说明，确认内容确实覆盖整行关键词后再点进去。</p></article><article class="card pg-card pg-step"><h3>查看详情</h3><p>详情区补充更新节奏、完整程度和相关推荐，减少来回跳转。</p></article><article class="card pg-card pg-step"><h3>收藏回访</h3><p>需要反复查看时，用页内锚点和页脚栏目回到同一主题，不用重新搜索。</p></article></div></div></section>
+<section class="section pg-extra dark-band" id="pg-voice"><div class="wrap"><h2>b站直播能禁止id观看吗用户怎么说</h2><p class="pg-lead">真实使用反馈，重点看有没有把「b站直播能禁止id观看吗」讲清楚。</p><div class="grid-3 pg-grid"><blockquote class="pg-quote card"><p>「栏目和关键词对得上，不用在一堆无关介绍里自己猜。」</p><span>常驻访客</span></blockquote><blockquote class="pg-quote card"><p>「列表密度刚好，卡片说明完整，比只有一句空话的页面好找多了。」</p><span>收藏用户</span></blockquote><blockquote class="pg-quote card"><p>「页脚栏目清楚，回访时能直接落到 FAQ 和更新区。」</p><span>回访读者</span></blockquote></div></div></section>
+<section class="section pg-extra" id="pg-faq"><div class="wrap"><h2>b站直播能禁止id观看吗常见问题</h2><div class="pg-faq"><details open><summary>这里的内容和关键词是不是同一主题？</summary><p>是。页面按整行「b站直播能禁止id观看吗」组织栏目、标题和说明，不会改写成套装行业官网。</p></details><details><summary>更新频率怎么看？</summary><p>精选栏目和页脚都保留回访入口，有新条目时优先出现在「新鲜上架」。</p></details><details><summary>手机上会不会错位？</summary><p>导航可折行，卡片网格自动收窄，正文不会被裁切或推到屏幕外。</p></details></div></div></section>
+<section class="section pg-extra" id="pg-cta"><div class="wrap"><div class="pg-cta"><h2>继续浏览 b站直播能禁止i</h2><p>如果这份目录对上了你要找的「b站直播能禁止id观看吗」，可以直接从栏目、榜单或页脚回到对应板块。</p><a class="btn btn-solid" href="#pg-picks">查看精选栏目</a><p class="pg-lead">bzzbnj.pages.dev</p></div></div></section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="brand-logo" style="background:var(--red)">B</span>b站直播能禁止id观看吗</div>
+        <p style="font-size:13px;color:#9AA6B0;max-width:380px">专注解析 B 站直播间用户管理功能：黑名单、封禁、等级门槛与房管体系，帮助主播维护干净的直播环境。</p>
+      </div>
+      <div>
+        <h4>功能解析</h4>
+        <a href="#methods">禁止观看方式</a>
+        <a href="#steps">各端操作路径</a>
+        <a href="#compare">禁言与禁入对比</a>
+      </div>
+      <div>
+        <h4>常见问题</h4>
+        <a href="#faq">封禁时长规则</a>
+        <a href="#faq">误封申诉恢复</a>
+        <a href="#faq">小号绕过对策</a>
+      </div>
+      <div>
+        <h4>实战参考</h4>
+        <a href="#cases">场景对照表</a>
+        <a href="#cases">房管协作建议</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2025 bzzbnj.pages.dev · b站直播能禁止id观看吗 · 内容仅供参考，具体功能以 B 站官方最新版本为准</span>
+      <span>bilibili 直播管理 · 非官方粉丝整理站</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const tb=document.getElementById('topbar');
+let last=0;
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  tb.classList.toggle('shrunk',y>120);
+  last=y;
+},{passive:true});
+document.querySelectorAll('.top-nav a').forEach(a=>{
+  a.addEventListener('click',()=>{document.querySelectorAll('.top-nav a').forEach(x=>x.classList.remove('on'));a.classList.add('on');});
+});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('mmenu').classList.remove('open');
+  document.getElementById('ham').classList.remove('open');
+}));
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"b站直播能禁止id观看吗？","acceptedAnswer":{"@type":"Answer","text":"可以。主播可通过直播间黑名单功能将指定 ID 用户挡在直播间外，对方无法进入、无法发言、无法互动，黑名单可长期保留。"}},
+    {"@type":"Question","name":"B站直播封禁有最长时长限制吗？","acceptedAnswer":{"@type":"Answer","text":"弹幕封禁提供 1 小时、1 天、7 天三档，到期自动解除；加入直播间黑名单无固定到期时间，可长期保留，随时手动移出。"}},
+    {"@type":"Question","name":"对方换小号进入直播间怎么办？","acceptedAnswer":{"@type":"Answer","text":"建议组合使用黑名单拉黑主号、开启粉丝牌等级发言门槛、关键词屏蔽，并由房管实时巡场，大幅提高捣乱成本。"}}
+  ]
+}
+</script>
+</body>
+</html
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="brand-logo" style="background:var(--red)">B</span>b站直播能禁止id观看吗</div>
+        <p style="font-size:13px;color:#9AA6B0;max-width:380px">专注解析 B 站直播间用户管理功能：黑名单、封禁、等级门槛与房管体系，帮助主播维护干净的直播环境。</p>
+      </div>
+      <div>
+        <h4>功能解析</h4>
+        <a href="#methods">禁止观看方式</a>
+        <a href="#steps">各端操作路径</a>
+        <a href="#compare">禁言与禁入对比</a>
+      </div>
+      <div>
+        <h4>常见问题</h4>
+        <a href="#faq">封禁时长规则</a>
+        <a href="#faq">误封申诉恢复</a>
+        <a href="#faq">小号绕过对策</a>
+      </div>
+      <div>
+        <h4>实战参考</h4>
+        <a href="#cases">场景对照表</a>
+        <a href="#cases">房管协作建议</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2025 bzzbnj.pages.dev · b站直播能禁止id观看吗 · 内容仅供参考，具体功能以 B 站官方最新版本为准</span>
+      <span>bilibili 直播管理 · 非官方粉丝整理站</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
